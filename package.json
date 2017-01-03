@@ -1,7 +1,7 @@
 {
   "name": "ng2-i18n",
   "version": "0.0.0",
-  "description": "An Angular 2 translate module with support for MessageFormat and hot-reload",
+  "description": "An Angular 2 translate module with support for MessageFormat and hot-reloading",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

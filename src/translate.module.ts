@@ -1,5 +1,5 @@
 import { NgModule, ModuleWithProviders, Optional, SkipSelf } from "@angular/core";
-import { TranslateService } from "./translate.service";
+import { TranslateServiceConfig, TranslateService } from "./translate.service";
 
 @NgModule({
   providers: [
@@ -18,11 +18,11 @@ class TranslateModule
     }
   }
 
-  static forRoot(){
+  static forRoot(config: TranslateServiceConfig){
     return {
       NgModule: TranslateModule,
       providers: [
-        { provide: TranslateService, useValue: new TranslateService() }
+        { provide: TranslateServiceConfig, useValue: config }
       ]
     }
   }

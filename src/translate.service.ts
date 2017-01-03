@@ -12,8 +12,8 @@ class TranslateServiceConfig
 @Injectable()
 class TranslateService
 {
-  private _locale: string;
-  private _hot: boolean;
+  private _locale: string = "en";
+  private _hot: boolean = false;
   
   constructor(@Optional() config: TranslateServiceConfig)
   {
@@ -28,5 +28,6 @@ class TranslateService
 }
 
 export {
+  TranslateServiceConfig,
   TranslateService
 }
